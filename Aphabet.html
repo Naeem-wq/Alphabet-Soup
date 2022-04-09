@@ -18,15 +18,19 @@
 
     <p>Text to arrange alphabetically once button is clicked.</p>
 
-    <input type="text" name="textBox" id="textBox" placeholder="Enter here">
-    <button id="btn" onclick="funct()">Click Me</button><br><br><br>
+    <input type="text" placeholder="Enter here" id="inputBox">
+    <button id="btn" onclick="sortFunction()">Click Me</button>
+
+    <p>Arranged Alphabetically: <Span id="result"></Span></p>
+    
+    <br><br><br>
 
 
     <h1>Character Count</h1>
 
     <p>Message</p>
-    <textarea name="text" id="textArea" cols="30" rows="10" placeholder="Enter text here" maxlength="20"></textarea>
-    <p id="count">Characters left:</p>
+    <textarea name="text" id="textArea" cols="30" rows="10" placeholder="Enter text here" maxlength="20" onkeyup="countChars(this);"></textarea>
+    <p id="count"><span id="result"></span> </p>
     <p>Your message to our company</p>
 
 
